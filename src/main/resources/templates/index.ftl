@@ -15,6 +15,7 @@
 </head>
 <body>
     <div class="container">
+        <h1>易淑凯帮你翻译！！！</h1>
         <form id="translate-form" action="/translate">
             <div class="form-group" method="post" >
                 <h2 class="form-group-heading">Please input URL:</h2>
@@ -25,7 +26,7 @@
 
         <form id="translate-form" action="/translate/zh">
             <div class="form-group" method="post" >
-                <h2 class="form-group-heading">Translate to chinaese:</h2>
+                <h2 class="form-group-heading">Translate to chinese:</h2>
                 <input type="input" class="form-control" id="word" placeholder="word" name="word">
                 <button type="submit" class="btn btn-lg btn-primary btn-block">Submit</button>
             </div>
