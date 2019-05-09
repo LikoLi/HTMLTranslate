@@ -1,2 +1,14 @@
 server:
   port: 8091
+spring:
+  devtools:
+    livereload:
+      enabled: true
+    restart:
+      additional-paths: WEB-INF/**
+
+org:
+  liko:
+    htmltranslate:
+      appid: 20190509000295821
+      securityKey: m_C57rrlUE1J04925MZK

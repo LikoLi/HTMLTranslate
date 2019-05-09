@@ -12,15 +12,14 @@
     <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
     <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="./js/index.js" ></script>
 </head>
 <body>
     <div class="container">
-        <form id="translate-form">
-            <div class="form-group">
+        <form id="translate-form" action="/translate">
+            <div class="form-group" method="post" >
                 <h2 class="form-group-heading">Please input URL:</h2>
-                <input type="url" class="form-control" id="htmlUrl" placeholder="URL">
-                <button type="submit" class="btn btn-lg btn-primary btn-block" >Submit</button>
+                <input type="url" class="form-control" id="htmlUrl" placeholder="URL" name="url">
+                <button type="submit" class="btn btn-lg btn-primary btn-block">Submit</button>
             </div>
         </form>
     </div>
