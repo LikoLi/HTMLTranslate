@@ -22,6 +22,22 @@
                 <button type="submit" class="btn btn-lg btn-primary btn-block">Submit</button>
             </div>
         </form>
+
+        <form id="translate-form" action="/translate/zh">
+            <div class="form-group" method="post" >
+                <h2 class="form-group-heading">Translate to chinaese:</h2>
+                <input type="input" class="form-control" id="word" placeholder="word" name="word">
+                <button type="submit" class="btn btn-lg btn-primary btn-block">Submit</button>
+            </div>
+        </form>
+
+        <form id="translate-form" action="/translate/en">
+            <div class="form-group" method="post" >
+                <h2 class="form-group-heading">Translate to english</h2>
+                <input type="input" class="form-control" id="word" placeholder="word" name="word">
+                <button type="submit" class="btn btn-lg btn-primary btn-block">Submit</button>
+            </div>
+        </form>
     </div>
 </body>
 </html>
