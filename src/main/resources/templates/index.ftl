@@ -14,6 +14,7 @@
 </head>
 <body>
     <div class="container">
+        <h3>易淑凯帮你翻译 V2.0</h3>
         <#--网页数据太大, 百度支持的很差-->
         <#--<form id="translate-form-url" action="/translate">-->
             <#--<div class="form-group" method="post" >-->
@@ -38,10 +39,22 @@
                 <button type="button" class="btn btn-lg btn-primary btn-block" id="btn-trans-en">Submit</button>
             </div>
         </form>
-        <div class="result">
-            <h2>Translate Result: </h2>
-            <label id="lb-result"></label>
-        </div>
+
+        <div class="modal fade" tabindex="-1" role="dialog" id="modal-result">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Translate Result:</h4>
+                    </div>
+                    <div class="modal-body" id="modal-content">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
     </div>
 </body>
 </html>
