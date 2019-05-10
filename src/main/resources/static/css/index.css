@@ -9,6 +9,11 @@ body {
     padding: 15px;
     margin: 0 auto;
 }
+.result {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
 .form-group .form-group-heading,
 .form-group .form-control {
     position: relative;
@@ -31,3 +36,10 @@ body {
     margin-top: 10px;
 }
 
+#lb-result {
+    border: solid 2px dimgrey;
+    color: darkblue;
+    width: 305px;
+    border-radius: 15px;
+    text-align: center;
+}

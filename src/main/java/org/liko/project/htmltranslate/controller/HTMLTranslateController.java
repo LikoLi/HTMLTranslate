@@ -35,23 +35,23 @@ public class HTMLTranslateController {
     }
 
     @RequestMapping("/translate/zh")
-    public String translateToZH(@RequestParam("word") String word, ModelMap map) {
+    @ResponseBody
+    public String translateToZH(@RequestParam("word") String word) {
         String transResult = api.getTransResult(word, "auto", "zh");
 
         JSONObject trans = JSONObject.parseObject(transResult);
         transResult = trans.getJSONArray("trans_result").getJSONObject(0).get("dst").toString();
-        map.put("transResult", transResult);
-        return "content";
+        return transResult;
     }
 
     @RequestMapping("/translate/en")
-    public String translateToEN(@RequestParam("word") String word, ModelMap map) {
+    @ResponseBody
+    public String translateToEN(@RequestParam("word") String word) {
         String transResult = api.getTransResult(word, "auto", "en");
 
         JSONObject trans = JSONObject.parseObject(transResult);
         transResult = trans.getJSONArray("trans_result").getJSONObject(0).get("dst").toString();
 
-        map.put("transResult", transResult);
-        return "content";
+        return transResult;
     }
 }
